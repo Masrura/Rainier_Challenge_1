@@ -26,7 +26,7 @@ function App() {
     <div >
       <div className='grid grid-cols-6 navbar fixed top-0 left-0'>
         <label className="col-start-2 col-end-5">
-          Menu2
+          Menu
         </label>
         <label className="switch col-end-7 col-span-2">
           <input type="checkbox" onClick={() => setDarkMode(!darkMode)} />

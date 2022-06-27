@@ -1,0 +1,147 @@
+@import url(./output.css);
+
+.health-condition {
+    background: #FFFFFF;
+    border: 1px solid #EDEBEB;
+    box-shadow: 0px 3.29032px 4.1129px rgba(0, 0, 0, 0.2);
+    border-radius: 6.58065px;
+    padding: 12px;
+}
+
+.navbar {
+    background-color: white;
+    width: 100%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #2196f3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    height: 15px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.dark {
+    background-color: black;
+}
+
+.appointment-container {
+
+    border: 1px solid #EDEBEB;
+    border-radius: 8px;
+    padding: 20px;
+    
+}
+
+.appointment-white {
+    background: #FFFFFF;
+    border: 1px solid #EDEBEB;
+    border-radius: 8px;
+}
+
+.appointment-dark {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.docInfo {
+    background: #FFF5F5;
+    border: 1px solid #FDDAD6;
+    border-radius: 8px;
+    padding: 11px;
+}
+
+.date {
+    background: #FFFFFF;
+    border: 1px solid #EDEBEB;
+    padding: 11px;
+}
+
+.time {
+    background: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+    padding: 11px;
+
+}
+
+.to-do-list-dark{
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.to-do-list-dark textarea{
+    border: 2px solid white;
+}
+.to-do-list-white{
+background-color: white;
+color: black;
+padding-top: 30px;
+    margin-top: 30px;
+}
+
+.to-do-list-white textarea {
+    border: 2px solid black;
+}

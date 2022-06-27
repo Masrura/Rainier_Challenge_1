@@ -1,0 +1,109 @@
+.sidebar-white  {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: black;
+}
+.sidebar-dark {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
+}
+.sidebar-open{
+  width: 200px;
+padding-left: 10px;
+}
+.sidebar-close {
+    width: 50px;
+    padding-left: 10px;
+}
+.sidebar-white a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    transition: 0.3s;
+}
+.sidebar-dark a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s;
+}
+.closedIcon{
+   margin-top: 30px;
+}
+.openedIcon{
+    margin-top: 10px;
+
+}
+.textDisplayFalse {
+    display: none;
+}
+.textDisplayTrue{
+    display: block;
+}
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar-dark .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 52px;
+    color: white;
+}
+.sidebar-white .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 52px;
+    color: black;
+}
+
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
